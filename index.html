@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Resep Makanan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Aplikasi Resep Makanan</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Resep 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Resep Nasi Goreng</h5>
+                        <p class="card-text">Nasi goreng adalah makanan khas Indonesia yang sangat populer.</p>
+                        <a href="detail.html" class="btn btn-primary">Lihat Resep</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Resep 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Resep Rendang</h5>
+                        <p class="card-text">Rendang adalah masakan daging yang kaya akan rempah.</p>
+                        <a href="detail.html" class="btn btn-primary">Lihat Resep</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Resep 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Resep Soto Ayam</h5>
+                        <p class="card-text">Soto ayam adalah sup tradisional yang disukai banyak orang.</p>
+                        <a href="detail.html" class="btn btn-primary">Lihat Resep</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    document.querySelectorAll('.btn-primary').forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Anda telah memilih resep: ' + this.parentElement.querySelector('.card-title').textContent);
+        });
+    });
+    </script>
+
+</body>
+</html>
